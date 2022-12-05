@@ -1,5 +1,5 @@
 const measureLayout = (node: HTMLElement) => {
-  if (node) {
+  if (node && node.getBoundingClientRect) {
     const rect = node.getBoundingClientRect();
 
     return {
